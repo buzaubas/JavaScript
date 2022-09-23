@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="box">
+        <p style="font-weight: bold;">Random.org</p>
+        <div id="count">0</div>
+        <button onclick="randomize()">RUN</button>
+    </div> -->
+
+
+    <button onclick="showHide()">Hide/Show</button>
+    <div id="showHide">
+       
+    </div>
+
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #count{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        button{
+            width: 80px;
+            height: 35px;
+            background-color: indianred;
+        }
+        div{
+            margin: 30px;
+        }
+        div.box {
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            border-width: 5px;
+            border-color: lightslategray;
+            border-style: dotted;
+            justify-content: center;
+        }
+        #flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+    </style>
+    <script src="TasksOnEvents.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пример страницы на HTML5</title>
+    <script src="Events.js"></script>
+</head>
+<body>
+
+    <form action="test.html">
+        <input type="user">
+        <button id="button1" type="submit">Click me</button>
+    </form>
+
+    <div onclick="alert('div')">
+        <p onclick="alert('p')"> 
+            <button onclick='alert("button")'></button>
+        </p>
+    </div>
+
+    <div id="div" action = "test.html" onclick="console.log('div click')">
+        <p class="p" onclick="console.log('Click on span')">
+            <button id="button1" type="submit"></button>
+        </p>
+    </div>
+
+    <style>
+        #div{
+            display: inline-block;
+
+        }
+        .div{
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            border: 1px green;
+            padding: 10px;
+        }
+        .span{
+            display: inline-block;
+            width: 10px;
+            background-color: indianred;
+        }
+        button{
+            height: 10px;
+        }
+    </style>
+</body>
+</html>
